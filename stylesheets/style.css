@@ -1,0 +1,470 @@
+.clearfix:after {
+  content: "."; display: block;height: 0;clear: both;font-size: 1px;line-height: 1px;visibility: hidden;
+}
+
+body {
+font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+color: #003366;
+background: white url('../images/body_bg.gif') repeat-x left top;
+margin: 0;
+padding: 0;
+font-size: 12px;
+}
+.clearer {
+clear: both;
+height: 1px;
+line-height: 1px;
+font-size: 1px;
+}
+pre {
+white-space: normal;
+}
+a img {
+border: none;
+}
+a {
+color: #0099ff;
+text-decoration: none;
+}
+a:hover {
+text-decoration: underline;
+}
+#wrap {
+max-width: 864px;
+margin: 0 auto;
+padding: 80px 20px 60px 20px;
+}
+/* logo */
+#logo {
+float: left;
+width: 37%;
+}
+#logo h1 {
+  font-size: 30px;
+  margin: 0;
+  font-weight: normal;
+}
+/* mainmenu */
+#mainmenu {
+float: left;
+  width: 52.1%;
+  padding-left: 5.8%;
+  text-align: right;
+}
+   #mainmenu a:hover, #langmenu a:hover {
+    text-decoration: none;
+   }
+    #mainmenu a {
+     margin-left: 2px;
+  padding-right: 3px;
+color: #003366;
+display: inline-block;
+padding: 5px;
+  text-transform: uppercase;
+    }
+#langmenu a {
+  margin-left: 2px;
+  padding-right: 3px;
+color: #003366;
+display: inline-block;
+padding: 5px;
+  text-transform: uppercase;
+}
+    #mainmenu a.active, #langmenu a.active {
+     -moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+background: #6bc7ff;
+  font-weight: bold;
+    }
+#mainmenu a:hover, #langmenu a:hover {
+     -moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+background: #b6edff;
+}
+#mainmenu a span {
+  float: right;
+}
+     #mainmenu a span, #langmenu a span {
+      height: 23px;
+      padding: 5px 6px 0 6px;
+      font-size: 12px;
+      text-transform: uppercase;
+      
+     }
+#langmenu a span {
+  float: left;
+}
+     #mainmenu a.active span, #langmenu a.active span {
+      background: url('../images/buenosaires_menu.gif') no-repeat left top;
+     }
+#mainmenu a:hover span, #langmenu a:hover span {
+  background: url('../images/buenosaires_menu_hover.gif') no-repeat left top;
+}
+     #mainmenu a.active span, #langmenu a.active span {
+      font-weight: bold;
+     }
+/* content_front */
+#content_front {
+padding-top: 20px;
+font-size: 20px;
+line-height: 30px;
+}
+/* white box thingie with shadows */
+#content_top {
+background: url('../images/box-top.png') no-repeat top left;
+height: 2px;
+font-size: 2px;
+line-height: 2px;
+padding: 0;
+margin: 0;
+margin-top: 35px;
+}
+#content_inner {
+background: url('../images/box-loop.png') repeat-y;
+}
+#content_bottom {
+background: url('../images/box-bottom.png') no-repeat bottom left;
+height: 3px;
+line-height: 3px;
+font-size: 3px;
+padding: 0;
+margin: 0;
+}
+/* footer */
+#footer {
+font-size: 12px;
+}
+#content_inner {
+padding: 3.5%;
+}
+#footer_pic {
+width: 74.4%;
+float: left;
+margin-right: 3.7%;
+}
+  #footer_pic.with_articles {
+    width: 37.9%;
+  }
+  #footer_pic img {max-width:100%;}
+#footer_news {
+float: left;
+width: 32.3%;
+}
+#contact {
+float: right;
+text-align: right;
+width: 16.2%;
+}
+#contact h2, #footer_news h2 {
+border-bottom: 7px solid #e5e5e5;
+margin-top: 0;
+padding-bottom: 10px;
+font-size: 16px;
+}
+/* edicy */
+#edicy {
+text-align: right;
+  margin-top: 5px;
+  font-size: 9px;
+  margin-right: 7px;
+}
+/* search */
+#search {
+  margin-left: 2px;
+}
+#onpage_search {
+background: url('../images/buenosaires_search_input.gif') no-repeat top left;
+border: none;
+width: 95px;
+height: 21px;
+padding: 4px 0 0 3px;
+float: left;
+  color: #003366;
+  outline: none;
+}
+.search_submit {
+border: none;
+background: url('../images/buenosaires_search_submit.gif') no-repeat top right;
+height: 22px;
+width: 21px;/*
+position: relative;
+left: -6px;
+top: 1px;
+*/
+float: left;
+}
+#content_inner2 {
+width: 75.9%;
+float: left;
+}
+#content_inner2 h1 {
+padding-bottom: 10px;
+border-bottom: 7px solid #e5e5e5;
+font-size: 24px;
+font-weight: normal;
+margin-top: 0;
+}
+#content_inner2 h2 {
+font-size: 16px;
+font-weight: normal;
+}
+#submenu {
+float: right;
+font-size: 16px;
+text-align: right;
+padding-bottom: 63px;
+width: 100%;
+}
+#submenu ul {
+margin: 0;
+padding: 0;
+}
+#submenu ul li {
+list-style-type: none;
+width: 100%;
+border-bottom: 7px solid #e5e5e5;
+padding: 12px 0;
+  text-align: right;
+  overflow: hidden;
+}
+  #sidebar #contact {width: 100%;}
+#submenu ul li a {
+color: #003366;
+}
+#submenu ul li a.active {
+  font-weight: bold;
+}
+.entry h1, .entry h1 a {
+color: #003366;
+}
+.entry h1 {
+margin-bottom: 26px;
+}
+.entry h1 .author {
+color: #7fccff;
+font-weight: bold;
+}
+.entry h1 .date {
+color: #7fccff;
+}
+.entry .articlebody {
+padding-bottom: 35px;
+}
+.dark {
+background: #daf2ff;
+}
+.excerpt {
+  margin-bottom: 14px
+}
+.comment {
+padding: 5px;
+}
+#commentform {
+background: #77c9ff;
+padding: 20px;
+font-size: 14px;
+margin-top: 10px;
+}
+#commentform h2 {
+font-size: 24px;
+margin: 0;
+}
+#commentform textarea {
+width: 100%;
+height: 150px;
+}
+#commentform input.text {
+height: 15px;
+width: 200px;
+}
+#commentform input.submit {
+border: none;
+background: #f3feff;
+}
+#langmenu {
+float: left;
+margin-left: 20px;
+}
+.rss {
+background-attachment:scroll;
+background-color:#E5E5E5;
+background-image:none;
+background-position:0 0;
+background-repeat:repeat;
+padding-bottom:10px;
+padding-left:10px;
+padding-right:10px;
+padding-top:10px;
+text-align:center;
+  margin-bottom: 20px;
+}
+.rss a {
+color:#0099FF;
+font-size:14px;
+font-weight:bold;
+text-decoration:underline;
+}
+.rss a:hover {
+  text-decoration: none;
+}
+
+#portfolio #content_inner2 img {
+margin-right: 15px;
+}
+/* forms */
+   .form_area {
+      margin: 20px 0;
+}
+.form_field {
+  margin: 0 0 5px;
+}
+.form_field label {
+  display: block;
+  font-weight: bold;
+}
+.form_error {
+  color: red;
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px dotted red;
+  padding: 5px;
+}
+.form_field_error {
+  color: red;
+  font-size: 10px;
+  line-height: 14px;
+}
+.form_notice {
+  color: green;
+  border: 1px dotted green;
+  padding: 5px;
+}
+.form_field_size_large {
+
+width: 98%;
+
+}
+
+.form_field_size_medium {
+
+width: 50%;
+
+}
+.form_field_size_small {
+
+width: 25%;
+
+}
+body .add-article {
+  margin-bottom: 15px;
+  display: inline-block !important;
+}
+.edy-site-blog-comment {
+  line-height: 17px
+}
+#sidebar {
+  width: 16.2%;
+  float: right; overflow: hidden;
+}
+#mobile-submenu, #mobile-thirdmenu {
+  display: none;
+}
+
+#commentform table {
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  #wrap {
+    width: auto;
+    padding: 10px 0 40px;
+  }
+  #footer_pic, #logo, #mainmenu, #footer_news, #contact {
+    float: none !important;
+    width: auto !important;
+    margin-right: 0 !important;
+  }
+  #logo {
+    padding: 0 10px;
+  }
+  #content_front {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+  #content_inner {
+    padding: 10px ;
+  }
+    #content_inner2 {
+      width: auto;
+      float: none;
+    }
+    #sidebar {
+      width: auto; float: none;
+    }
+      #submenu {
+        display: none;
+      }
+  #mainmenu {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+    #mainmenu p {
+      text-align: left;
+    }
+  #content_top {
+    margin-top: 10px;
+  }
+  #footer_news {
+    margin: 20px 0;
+  }
+  #contact {
+    text-align: left;
+    margin: 20px 0;
+  }
+  #search {
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  #langmenu {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  #mobile-submenu, #mobile-thirdmenu {
+    display: block;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+  }
+    #mobile-submenu li, #mobile-thirdmenu li {
+      float: left;
+      margin-right: 5px;
+    }
+      #mobile-submenu a, #mobile-thirdmenu a {
+        display: block;
+        padding: 5px;
+        color: #003366;
+      }
+      #mobile-submenu .active a, #mobile-thirdmenu .active a {
+        text-decoration: underline;
+      }
+  #mobile-submenu {
+    background: #6bc7ff;
+  }
+  #mobile-thirdmenu {
+    background: #b6edff;
+  }
+  #content_inner2 h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .entry .articlebody {
+    padding-bottom: 20px;
+  }
+  #conmentform input.text, #commentform textarea {
+    width: 100%;
+  }
+  .rss {
+    margin-top: 20px;
+  }
+}

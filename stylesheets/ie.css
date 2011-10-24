@@ -1,0 +1,32 @@
+#wrap {
+  width: 864px;
+}
+#logo {
+  width: 320px;
+}
+#mainmenu {
+  width: 450px;
+  padding-left: 50px;
+}
+#content_inner {
+  padding: 30px;
+}
+#footer_pic {
+  width: 350px;
+  margin-right: 30px;
+}
+#footer_news {
+  width: 260px;
+}
+#contact {
+  width: 130px;
+}
+#content_inner2 {
+  width: 610px;
+}
+#submenu li {
+  width: 130px;
+}
+#sidebar {
+  width: 130px;
+}
