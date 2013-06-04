@@ -3,7 +3,6 @@
 <head>
 
 {% include "SiteHeader" %}
-  <title>{{site.name}} &raquo; {{page.title}}</title>
 </head>
 <body>
 <div id="wrap" class="clearfix">
@@ -41,7 +40,6 @@
 	<!--//footer-->
 </div>
 <!--//wrap-->
-  {% unless editmode %}{{ site.analytics }}{% endunless %}
   {% include "JS" %}
 </body>
 </html>

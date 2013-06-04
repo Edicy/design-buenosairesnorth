@@ -4,7 +4,6 @@
 
 {% include "SiteHeader" %}
   {{ blog.rss_link }}
-  <title>{{article.title}} &laquo; {{page.title}} | {{site.name}}</title>
 </head>
 <body>
 <div id="wrap" class="clearfix">
@@ -27,6 +26,23 @@
 <div class="articlebody clearfix">
   <div class="excerpt">{% editable article.excerpt %}</div>
 {% editable article.body %}
+
+  {% if editmode %}
+    <div class="cfx article-tags">
+        <div class="article-tag-icon"></div>
+        {% editable article.tags %}
+    </div>
+  {% else %}
+    {% unless article.tags == empty %}
+        <div class="cfx article-tags">
+            <div class="article-tag-icon"></div>
+            {% for tag in article.tags %}
+                <a href="{{ article.page.url }}/tagged/{{ tag.path }}">{{ tag.name }}</a>{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+        </div>
+    {% endunless %}
+  {% endif %}
+
 </div>
 </div>
      <a name="comments"></a>
@@ -35,7 +51,7 @@
 {% for comment in article.comments %}
 <div class="comment{% cycle 'comments': ' light', ' dark' %} edy-site-blog-comment">
 <strong>{{ comment.author }}</strong>, {{ comment.created_at | format_date:"long" }} {% removebutton %}<br />
-<p>{{ comment.body }}</p>
+<p>{{ comment.body_html }}</p>
 </div>
 {% endfor %}
 <div id="commentform">
@@ -84,7 +100,6 @@
 	<!--//footer-->
 </div>
 <!--//wrap-->
-  {% unless editmode %}{{ site.analytics }}{% endunless %}
   {% include "JS" %}
 </body>
 </html>
