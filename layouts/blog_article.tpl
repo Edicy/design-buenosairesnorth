@@ -24,8 +24,8 @@
 <div class="entry">
 {% if editmode %}<h1>{% editable article.title plain="true" %}<span class="author">{{ article.author.name }}</span> <span class="date">{{ article.created_at | format_date:"short" }}</span></h1>{% else %}<h1><a href="{{ article.url }}">{{ article.title }} <span class="author">{{ article.author.name }}</span> <span class="date">{{ article.created_at | date:"%b %d" }}</span></a></h1>{% endif %}
 <div class="articlebody clearfix">
-  <div class="excerpt">{% editable article.excerpt %}</div>
-{% editable article.body %}
+  <div class="excerpt" data-search-indexing-allowed="true">{% editable article.excerpt %}</div>
+<div data-search-indexing-allowed="true">{% editable article.body %}</div>
 
   {% if editmode %}
     <div class="cfx article-tags">

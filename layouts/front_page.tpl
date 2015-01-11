@@ -25,7 +25,7 @@
     <div id="content_top"></div>
    <div id="content_inner">
      <div id="footer_pic"{% for article in site.latest_articles limit:1 %}class="with_articles"{% endfor %} class="clearfix">
-     {% content %}
+     <div data-search-indexing-allowed="true">{% content %}</div>
    </div>
      {% for article in site.latest_articles limit:1 %}
    <div id="footer_news">
