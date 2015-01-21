@@ -43,7 +43,7 @@
 </div>
 {% endfor %}
    </div>
-<div id="sidebar">
+<div id="sidebar" class="clearfix">>
   <div class="rss">
 <a href="{{ bloglink }}.rss">RSS</a>
 </div>

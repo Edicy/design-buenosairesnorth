@@ -1,5 +1,7 @@
 .clearfix:after {
-  content: "."; display: block;height: 0;clear: both;font-size: 1px;line-height: 1px;visibility: hidden;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 body {
@@ -93,10 +95,19 @@ float: left;
   padding-left: 5.8%;
   text-align: right;
 }
-   #mainmenu a:hover, #langmenu a:hover {
+#mainmenu ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+#mainmenu li {
+  display: inline-block;
+}
+   #mainmenu a:not:hover, #langmenu a:not:hover {
     text-decoration: none;
    }
-    #mainmenu a {
+    #mainmenu a:not(.edy-cbtn) {
      margin-left: 2px;
   padding-right: 3px;
 color: #003366;
@@ -104,7 +115,7 @@ display: inline-block;
 padding: 5px;
   text-transform: uppercase;
     }
-#langmenu a {
+#langmenu a:not(.edy-cbtn) {
   margin-left: 2px;
   padding-right: 3px;
 color: #003366;
@@ -112,37 +123,37 @@ display: inline-block;
 padding: 5px;
   text-transform: uppercase;
 }
-    #mainmenu a.active, #langmenu a.active {
+    #mainmenu a:not(.edy-cbtn).active, #langmenu a:not(.edy-cbtn).active {
      -moz-border-radius: 3px;
 -webkit-border-radius: 3px;
 background: #6bc7ff;
   font-weight: bold;
     }
-#mainmenu a:hover, #langmenu a:hover {
+#mainmenu a:not:hover, #langmenu a:not:hover {
      -moz-border-radius: 3px;
 -webkit-border-radius: 3px;
 background: #b6edff;
 }
-#mainmenu a span {
+#mainmenu a:not(.edy-cbtn) span {
   float: right;
 }
-     #mainmenu a span, #langmenu a span {
+     #mainmenu a:not(.edy-cbtn) span, #langmenu a:not(.edy-cbtn) span {
       height: 23px;
       padding: 5px 6px 0 6px;
       font-size: 12px;
       text-transform: uppercase;
       
      }
-#langmenu a span {
+#langmenu a:not(.edy-cbtn) span {
   float: left;
 }
-     #mainmenu a.active span, #langmenu a.active span {
+     #mainmenu a:not(.edy-cbtn).active span, #langmenu a:not(.edy-cbtn).active span {
       background: url('../images/buenosaires_menu.gif') no-repeat left top;
      }
-#mainmenu a:hover span, #langmenu a:hover span {
+#mainmenu a:not:hover span, #langmenu a:not:hover span {
   background: url('../images/buenosaires_menu_hover.gif') no-repeat left top;
 }
-     #mainmenu a.active span, #langmenu a.active span {
+     #mainmenu a:not(.edy-cbtn).active span, #langmenu a:not(.edy-cbtn).active span {
       font-weight: bold;
      }
 /* content_front */
@@ -267,7 +278,6 @@ width: 100%;
 border-bottom: 7px solid #e5e5e5;
 padding: 12px 0;
   text-align: right;
-  overflow: hidden;
 }
   #sidebar #contact {width: 100%;}
 #submenu ul li a {
@@ -444,7 +454,7 @@ body .add-article {
 }
 #sidebar {
   width: 16.2%;
-  float: right; overflow: hidden;
+  float: right;
 }
 #mobile-submenu, #mobile-thirdmenu {
   display: none;
@@ -549,4 +559,13 @@ body .add-article {
     margin-top: 20px;
   }
   .form_field_textfield, .form_field_textarea { width: 97% }
+}
+
+/* Voog cms style overrides */
+#mainmenu .vg-cms-btn {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#mainmenu .vg-cms-btn:last-child {
+  margin-right: 0;
 }

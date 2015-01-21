@@ -1,6 +1,6 @@
 {% for item in site.menuitems %}{% if item.selected? %}
 {% if editmode %}
-<div id="submenu">
+<div id="submenu" class="clearfix">
   <ul>{% for level2 in item.visible_children %}
     <li{% unless level2.translated? %} class="untranslated"{% endunless %}><a href="{{ level2.url }}"{% if level2.selected? %} class="active"{% endif %}{% unless level2.translated? %} class="fci-editor-menuadd"{% endunless %}>{{ level2.title }}</a></li>
     {% endfor %}
@@ -10,7 +10,7 @@
    </div>
       {% else %}
       {% if item.children? %}
-      <div id="submenu">
+      <div id="submenu" class="clearfix">
   <ul>{% for level2 in item.children %}
     <li><a href="{{ level2.url }}"{% if level2.selected? %} class="active"{% endif %}>{{ level2.title }}</a></li>
     {% endfor %}
