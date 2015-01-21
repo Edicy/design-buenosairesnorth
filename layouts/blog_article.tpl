@@ -79,7 +79,7 @@
 {% endcommentform %}
 </div>
    </div>
-<div id="sidebar" class="clearfix">>
+<div id="sidebar" class="clearfix">
   <div class="rss">
 <a href="{{ bloglink }}.rss">RSS</a>
 </div>

@@ -22,7 +22,7 @@
    <div id="content_inner2" class="clearfix" data-search-indexing-allowed="true">
     {% content %}
    </div>
-<div id="sidebar" class="clearfix">>
+<div id="sidebar" class="clearfix">
 {% include "Submenu" %}
 {% include "Contact" %}
 </div>
