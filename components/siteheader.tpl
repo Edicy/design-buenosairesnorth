@@ -6,7 +6,7 @@
     <script src="{{ javascripts_path }}/modernizr.js"></script>
     {% if site.search.enabled %}{% stylesheet_link "assets/site_search/3.0/style.css?1" static_host="true" %}{% endif %}
 	{% stylesheet_link "style.css?buenos_aires_north2" %}
-	{% if editmode %}{% stylesheet_link "assets/admin/editmode.css" static_host="true" %}{% endif %}
+	{% if editmode %}<style>.untranslated{opacity:.5;filter:alpha(Opacity=50);zoom:1}</style>{% endif %}
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" href="/favicon.ico" type="image/ico" />
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
@@ -22,6 +22,6 @@
 }
 
 </style>
-<!--[if IE]><link rel="stylesheet" href="http://static.edicy.com/assets/ie.css" type="text/css" />{% stylesheet_link "ie.css" %}<![endif]-->
+<!--[if IE]><style>.clearfix { zoom:1; }</style>{% stylesheet_link "ie.css" %}<![endif]-->
 <meta name="viewport" content="initial-scale=1" />
 <title>{% if article %}{{ article.title }} | {{page.site_title}}{% else %}{{page.site_title}} | {{ page.title }}{% endif %}</title>
