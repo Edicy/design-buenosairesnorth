@@ -37,7 +37,7 @@
     {% for article in articles %}
 <div class="entry clearfix">
   <h1><a href="{{ article.url }}">{{ article.title }}</a> <span class="author">{{ article.author.name }}</span> <span class="date">{{ article.created_at | format_date:"short" }}</span></a></h1>
-<div class="articlebody">
+<div class="articlebody content-hyphenate">
   {{ article.excerpt }}<br /> <a href="{{ article.url }}">{{ "read_more" | lc }}</a>, <a href="{{ article.url }}#comments">{{ "comments_for_count" | lc }}: {{ article.comments_count }}</a>
 </div>
 </div>
