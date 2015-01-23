@@ -6,7 +6,7 @@
   {{ blog.rss_link }}
 </head>
 <body>
-<div id="wrap" class="clearfix">
+<div id="wrap" class="clearfix content-hyphenate">
 	<div id="header">
   <div id="logo">
    <h1 class="clearfix">{% editable site.header %}</h1>
@@ -22,10 +22,10 @@
    <div class="clearer"></div>
    <div id="content_inner2">
 <div class="entry">
-{% if editmode %}<h1 class="content-hyphenate">{% editable article.title plain="true" %}<span class="author">{{ article.author.name }}</span> <span class="date">{{ article.created_at | format_date:"short" }}</span></h1>{% else %}<h1><a href="{{ article.url }}">{{ article.title }} <span class="author">{{ article.author.name }}</span> <span class="date">{{ article.created_at | date:"%b %d" }}</span></a></h1>{% endif %}
-<div class="articlebody clearfix content-hyphenate">
+{% if editmode %}<h1>{% editable article.title plain="true" %}<span class="author">{{ article.author.name }}</span> <span class="date">{{ article.created_at | format_date:"short" }}</span></h1>{% else %}<h1><a href="{{ article.url }}">{{ article.title }} <span class="author">{{ article.author.name }}</span> <span class="date">{{ article.created_at | date:"%b %d" }}</span></a></h1>{% endif %}
+<div class="articlebody clearfix">
   <div class="excerpt" data-search-indexing-allowed="true">{% editable article.excerpt %}</div>
-<div class="content-hyphenate" data-search-indexing-allowed="true">{% editable article.body %}</div>
+<div data-search-indexing-allowed="true">{% editable article.body %}</div>
 
   {% if editmode %}
     <div class="cfx article-tags">
@@ -49,7 +49,7 @@
 <h1>{{ "comments_for_count" |lc }}: <span class="edy-site-blog-comments-count">{{ article.comments_count }}</span>
 </h1>
 {% for comment in article.comments %}
-<div class="comment{% cycle 'comments': ' light', ' dark' %} edy-site-blog-comment content-hyphenate">
+<div class="comment{% cycle 'comments': ' light', ' dark' %} edy-site-blog-comment">
 <strong>{{ comment.author }}</strong>, {{ comment.created_at | format_date:"long" }} {% removebutton %}<br />
 <p>{{ comment.body_html }}</p>
 </div>

@@ -457,7 +457,7 @@ body .add-article {
   display: inline-block !important;
 }
 .edy-site-blog-comment {
-  line-height: 1.2em;
+  line-height: 1.4em;
 }
 #sidebar {
   width: 16.2%;
@@ -575,4 +575,14 @@ body .add-article {
 }
 #mainmenu .vg-cms-btn:last-child {
   margin-right: 0;
+}
+
+#wrap .edy-btn-removecomment {
+  position: relative;
+  top: 2px;
+  line-height: 0 !important;
+}
+
+#wrap .edy-site-blog-comment:hover .edy-btn-removecomment {
+  text-decoration: none;
 }

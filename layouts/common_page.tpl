@@ -5,7 +5,7 @@
 {% include "SiteHeader" %}
 </head>
 <body>
-<div id="wrap" class="clearfix">
+<div id="wrap" class="clearfix content-hyphenate">
 	<div id="header">
   <div id="logo">
    <h1 class="clearfix">{% editable site.header %}</h1>
@@ -19,7 +19,7 @@
     <div id="content_top"></div>
    <div id="content_inner">
    <div class="clearer"></div>
-   <div id="content_inner2" class="clearfix content-hyphenate" data-search-indexing-allowed="true">
+   <div id="content_inner2" class="clearfix" data-search-indexing-allowed="true">
     {% content %}
    </div>
 <div id="sidebar" class="clearfix">
