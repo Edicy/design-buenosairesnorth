@@ -93,9 +93,9 @@
   "assets": [
     {
       "content_type": "image/svg+xml",
-      "file": "assets/header-tag.svg",
+      "file": "assets/tag.svg",
       "kind": "assets",
-      "filename": "header-tag.svg"
+      "filename": "tag.svg"
     },
     {
       "content_type": "image/svg+xml",
@@ -147,9 +147,9 @@
     },
     {
       "content_type": "image/png",
-      "file": "images/header-tag.png",
+      "file": "images/tag.png",
       "kind": "images",
-      "filename": "header-tag.png"
+      "filename": "tag.png"
     },
     {
       "content_type": "image/png",
